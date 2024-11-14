@@ -16,8 +16,8 @@ var increaseMovesBy = 5;
 var increaseEvery = 5;
 
 function preload() {
-    player_img = loadImage('/assets/player.png'); // Load the image
-    spider_img = loadImage('/assets/spider.png'); // Load the image
+    player_img = loadImage('/Muffet-AI/assets/player.png'); // Load the image
+    spider_img = loadImage('/Muffet-AI/assets/spider.png'); // Load the image
 }
 
 function startLevel() {
