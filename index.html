@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffet AI</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        button {
+            display: block;
+        }
+        
+        .content {
+            width: 100;
+            display: flex;
+            gap: 20px;
+        }
+        input {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        <div id="game">
+
+        </div>
+        <div class="settings">
+            <label for="popSizeRange">Розмір покоління (<span id="popSize">1</span>)</label>
+            <input type="range" id="popSizeRange" min="10" max="300"/>
+            
+            <label for="mutationRateRange">Шанс мутувати (<span id="mutationRate">1</span>%)</label>
+            <input type="range" id="mutationRateRange" min="1" max="100"/>
+
+            <label for="increaseEveryRange">Збільшувати рухів кожні (<span id="increaseEvery">5</span> поколінь)</label>
+            <input type="range" id="increaseEveryRange" min="1" max="50"/>
+    
+            <label for="increaseMovesByRange">Збільшувати рухи на (<span id="increaseMovesBy">5</span>)</label>
+            <input type="range" id="increaseMovesByRange" min="1" max="100"/>
+    
+            <button id="watchTrained">Подивитись натренований приклад</button>
+            <br>
+            <button id="saveChanges">Зберегти зміни</button>
+            <b style="font-size: 12px; color: red;">УВАГА!!! Тренування почнеться спочатку!</b>
+        </div>
+    </div>
+    
+    <script src="./libs/jQuery.min.js"></script>
+    <script src="./libs/p5.js"></script>
+    <script src="./libs/planck.js"></script>
+    <script src="./libs/p5play.js"></script>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/brain.js"></script>
+    <script src="./js/population.js"></script>
+
+    <script src="./best.js"></script>
+    <script src="./js/wall.js"></script>
+    <script src="./js/road.js"></script>
+    <script src="./js/muffet.js"></script>
+    <script src="./js/spider.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
